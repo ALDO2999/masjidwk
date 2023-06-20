@@ -1,0 +1,753 @@
+body {
+    height: 2000px;
+    background: #ffffff;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    padding: 20px 0;
+    align-items: center;
+    /* overflow: hidden; */
+
+    
+    position: fixed;
+    top: 0;
+    height: 30px;
+    justify-content: space-around;
+    background-color: white;
+    z-index: 10000;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr)); */
+
+}
+
+
+
+
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar ul li ::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li :hover::after {
+    width: 100%;
+}
+
+.navbar img {
+    width: 50px;
+    height: auto;
+    /* margin-left: %; */
+}
+
+.logo {
+    margin-right: 48.5%;
+
+
+}
+
+.logo-text h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+
+
+
+}
+
+.logo-text div {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    margin: 0;
+}
+
+.content {
+    position: absolute;
+    margin-top: 20%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    line-height: 0.8;
+}
+
+.kesatu {
+    color: gray;
+
+}
+
+
+span {
+    color: darkblue;
+}
+
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 15px;
+    width: 230px;
+    height: 35px;
+    background-color: darkblue;
+    /* text-decoration: none; */
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    height: 200%;
+
+
+}
+
+.tombol button {
+    margin-top: 40px;
+}
+
+.masjid img {
+    width: 500px;
+    height: auto;
+    margin-left: 63%;
+    margin-top: 50px;
+
+}
+
+.total {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    margin-top: 5%;
+    box-shadow: 0 0 10px rgb(197, 197, 197);
+    width: 88%;
+    height: 200px;
+    margin-inline-start: 50px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+
+    flex-direction: column;
+
+    line-height: 200%;
+    font-size: larger;
+    color: black;
+    margin-left: 90px;
+    /* border-radius: 10px; */
+    padding-bottom: 20px;
+}
+
+/* YANG DIUBAH */
+
+.total ul{
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+}
+
+
+
+/* .progress-bar {
+    width: 300px;
+    height: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 120px;
+    position: right;
+    align-items: center;
+  }
+  
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #4c4eaf;
+    animation: progress 5s linear infinite;
+  }
+  
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 30%;
+    }
+  } */
+
+.banner {
+    background: darkblue;
+    color: white;
+    height: 30px;
+    padding: 10px;
+    width: 86.6%;
+    margin-left: 90px;
+    text-align: center;
+}
+
+.banner tr td {
+    justify-content: space-between;
+}
+
+.banner span{
+    color: yellow;
+}
+
+.spanduk {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin-top: 10%;
+    /* width: 102%; */
+    height: 300px;
+    margin-inline-start: 50px;
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 200%;
+    font-size: larger;
+    color: black;
+    border-radius: 20px;
+    margin-left: -3px;
+    text-align: center;
+}
+
+.total li {
+    margin-top: -1%;
+    list-style-type: none;
+
+}
+
+.total span {
+    color: gray;
+}
+
+.content1 {
+    position: absolute;
+    margin-top: 15%;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+.text2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    line-height: 0.8;
+    color: black;
+}
+
+.satu {
+
+    font-size: 40px;
+}
+
+.dua {
+    margin-right: 70%;
+    font-size: 40px;
+
+
+}
+
+.tiga p {
+    text-align: left;
+    color: #919191;
+    font-family: Be Vietnam Pro;
+    font-size: 35px;
+
+}
+
+
+.container {
+    display: flex;
+}
+
+.card {
+    width: 400px;
+    height: 455px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: -1px -2px 8px 3px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: -1px -2px 8px 3px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -1px -2px 8px 3px rgba(0, 0, 0, 0.23);
+    text-align: left;
+}
+
+.card4 {
+    margin-top: 33%;
+    margin-left: 90px;
+}
+
+.items img {
+    width: 80px;
+    height: auto;
+    margin-right: 900px;
+    text-align: left;
+}
+
+.card4 .container .card {
+    color: black;
+}
+
+.tangan {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 121.8%;
+    z-index: 1;
+
+}
+
+.tangan img {
+    /* width: ; */
+    margin-right: 140px;
+    margin-top: 35.5%;
+
+
+}
+
+
+.ukuran {
+
+    margin-left: 20px;
+
+}
+
+.ukuran p {
+
+    font-size: 30px;
+    font-family: Be Vietnam Pro;
+    color: #999999;
+
+
+
+}
+
+.ukuran h3 {
+
+    font-size: 40px;
+
+}
+
+.pnct {
+
+    background-color: blue;
+
+}
+
+.content2 {
+    position: absolute;
+    margin-top: 15%;
+    left: 65.%;
+    transform: translateY(-50%);
+}
+
+.one {
+
+    font-size: 40px;
+}
+
+.wk {
+    font-size: 32px;
+}
+
+
+
+
+
+.text3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    line-height: 0.8;
+    color: black;
+}
+
+.two {
+    margin-right: 70%;
+    font-size: 40px;
+}
+
+.three h6 {
+    text-align: left;
+    font-family: Be Vietnam Pro;
+    /* font-size: 30px; */
+    font-weight: 500;
+    /* line-height: 48px; */
+    /* letter-spacing: 0em; */
+    text-align: left;
+    color: #919191;
+    font-family: Be Vietnam Pro;
+    font-size: 35px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.items {
+
+    color: #1F3984;
+    /* font-size: ; */
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+
+.card5 {
+    margin-top: 33%;
+    margin-left: 90px;
+}
+
+
+.card5 .container .cardd {
+    color: black;
+}
+
+
+.ukuran {
+
+    margin-left: 20px;
+
+}
+
+.containerr {
+    display: flex;
+}
+
+.cardd {
+    text-align: left;
+    height: 300px;
+    width: 680px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: -1px -2px 8px 3px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: -1px -2px 8px 3px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -1px -2px 8px 3px rgba(0, 0, 0, 0.23);
+}
+
+.wk {
+
+    margin-right: 52%;
+
+}
+
+.card-container {
+    margin-top: 420px;
+    display: flex;
+    margin-left: 90px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+}
+
+.carddd img {
+
+    width: 450px;
+    margin: 20px;
+
+}
+
+.kartu img {
+
+    height: 750px;
+    width: 407.75px;
+    margin: 20px;
+    margin-top: 100px;
+
+}
+
+.kartu img {
+
+    height: 750px;
+    width: 407.75px;
+    margin: 20px;
+    margin-top: 100px;
+
+}
+
+.kebawah {
+
+    display: flex;
+    /* margin-top: -px; */
+    margin-left: 90px;
+
+
+}
+
+
+.bawah{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#001E42;
+    margin-top: 10%;
+    width: 100.5%;
+    /* height: 300px; */
+    margin-inline-start: 50px;
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 200%;
+    font-size: larger;
+    color: black;
+    margin-left: -8px;
+    text-align: center;
+
+}
+
+
+table {
+    width: 87%;
+    border-collapse: collapse;
+    margin-top: 33%;
+    margin-left: 6%;
+    padding: 45%;
+}
+
+table,th,td {
+    border: 1px solid white;
+    text-align: center;
+    /* background-color: #ff0000; */
+}
+
+th,td {
+    padding: 8px;
+    text-align: left;
+
+}
+
+th {
+    background-color: #f2f2f2;
+    
+}
+
+.tulisan section{
+
+    color: white;
+    text-align: left;
+    margin-right: 140px;
+
+}
+
+.bawah img {
+
+    width: 69.45px;
+    height: 69.45px;
+    margin-right: 180px;
+    margin-top: -70px;
+    /* text-align: left; */
+    
+
+}
+
+
+
+.processing{
+    margin-top: 10px;
+    background-color: #F5F5F5;
+    min-height: 30px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .processing-bar {
+    background-color: #F5F5F5;
+    background: #1F3984;
+    max-height: 100%;
+    width: 0;
+    opacity: 0;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+  }
+
+
+
+
+  footer{
+    background: #001E42;
+    min-height: 500px;
+    padding: 4% 7.5%;
+  }
+  
+  .footer-row{
+      display: flex;
+      flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer ul li{
+      list-style: disc;
+    color: #FFFFFF;
+  }
+  
+  .footer-content{
+    min-width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-col ul li a{
+    max-width: auto;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-links{
+    display: flex;
+  }
+  
+  .footer-links li{
+    margin-right: 10px;
+    list-style: none !important;
+  }
+  
+  .footer-col:nth-child(1){
+     width: 240px;
+  }
+  
+  .footer-col h4{
+      font-size: 16px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      font-weight: 500;
+      position: relative;
+  }
+  
+  .footer hr{
+    margin: 20px 0;
+    opacity: 50%;
+  }
+  
+  .footer-col p{
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+  }
+  
+  .footer-form{
+    width: 25%;
+  }
+  
+  .footer-form .footer-col{
+    width: 100%;
+  }
+  
+  .footer-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  
+  .footer-form input, textarea{
+    width: 100%;
+    padding: 12px;
+    font-size: 13px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    border-radius: 5px !important;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+  }
+  
+  textarea{
+    height:200px;
+  }
+  
+  .footer-form button{
+    background-color: #FFF500;
+    color: #1F3984;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    margin: 0;
+  }
+  
+  .footer-form button:hover{
+    background-color: #d2cb00;
+  }
+  
+  .footer-form input:nth-child(4){
+    height: 150px !important;
+  }
+  
+  .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  }
+  
+  .footer-brand{
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-brand h3{
+    margin-left: 30px;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  
+  .footer-brand img{
+    width: 60px;
+    height: 60px;
+  }
+
